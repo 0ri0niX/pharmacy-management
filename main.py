@@ -33,13 +33,13 @@ def afficher_menu() -> None:
     print("\n" + "=" * 45)
     print(f"     💊 {NOM_PHARMACIE} — v{VERSION}")
     print("=" * 45)
-    print("  1. Afficher le stock")
-    print("  2. Ajouter un médicament")
-    print("  3. Effectuer une vente")
-    print("  4. Voir l'historique des ventes")
-    print("  5. Afficher les alertes")
-    print("  6. Infos du pharmacien")
-    print("  7. Quitter")
+    print("  1. View stock")
+    print("  2. Add a medecine")
+    print("  3. Make a sale")
+    print("  4. View sale history")
+    print("  5. View alerts")
+    print("  6. Pharmacist info")
+    print("  7. quit")
     print("=" * 45)
 
 
@@ -143,7 +143,7 @@ def main() -> None:
 
     while continuer:
         afficher_menu()
-        choix: str = input("  Votre choix : ").strip()
+        choix: str = input("  your choice : ").strip()
 
         if choix == "1":
             afficher_stock(stock)
